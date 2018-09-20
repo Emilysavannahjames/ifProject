@@ -62,9 +62,9 @@ public class model
 	{
 		this.timeHours = timeHours;
 	}
-	public void setHasDistance(boolean hasDistance)
+	public void distance(double distance)
 	{
-		this.hasDistance = hasDistance;
+		this.distance = distance;
 	}
 	
 }
