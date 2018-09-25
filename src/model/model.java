@@ -4,9 +4,9 @@ public class model
 {
 	//Declaration Section---
 	private String name;
-	private int timeMinutes;
-	private int timeHours;
-	private double distance;
+	private int legCount;
+	private int armCount;
+	private double howTall;
 	//-----------------------
 	/**
 	 * Default constructor for a run
@@ -29,42 +29,42 @@ public class model
 	public model(String name, int timeMinutes, int timeHours, double distance)
 	{
 		this.name = name;
-		this.timeMinutes = timeMinutes;
-		this.timeHours = timeHours;
-		this.distance = distance;
+		this.legCount = timeMinutes;
+		this.armCount = timeHours;
+		this.howTall = distance;
 		
 	}
 	public String getName()
 	{
 		return name;
 	}
-	public int getTimeMinutes()
+	public int getLegCount()
 	{
-		return timeMinutes;
+		return legCount;
 	}
-	public int getTimeHours()
+	public int getArmCount()
 	{
-		return timeHours;
+		return armCount;
 	}
-	public double getDistance()
+	public double getHowTall()
 	{
-		return distance;
+		return howTall;
 	}
 	public void setName(String name)
 	{
 		this.name = name;
 	}
-	public void setTimeMinutes(int timeMinutes)
+	public void setLegCount(int legCount)
 	{
-		this.timeMinutes = timeMinutes;
+		this.legCount = legCount;
 	}
-	public void setTimeHours(int timeHours)
+	public void setArmCount(int armCount)
 	{
-		this.timeHours = timeHours;
+		this.armCount = armCount;
 	}
-	public void distance(double distance)
+	public void howTall(double howTall)
 	{
-		this.distance = distance;
+		this.howTall = howTall;
 	}
 	
 }
