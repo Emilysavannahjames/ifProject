@@ -1,6 +1,6 @@
 package model;
 
-public class model
+public class Flamingo
 {
 	//Declaration Section---
 	private String name;
@@ -13,7 +13,7 @@ public class model
 	 * Initializes all variables to valid but "bad" values
 	 * used for later customization
 	 */
-	public model()
+	public Flamingo()
 	{
 		//constructor default
 	}
@@ -22,11 +22,11 @@ public class model
 	 * @param name or the run
 	 */
 	
-	public model(String name)
+	public Flamingo(String name)
 	{
 		this.name = name;
 	}
-	public model(String name, int timeMinutes, int timeHours, double distance)
+	public Flamingo(String name, int timeMinutes, int timeHours, double distance)
 	{
 		this.name = name;
 		this.legCount = timeMinutes;

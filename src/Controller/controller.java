@@ -1,6 +1,6 @@
 package Controller;
 
-import model.model; //import section
+import model.Flamingo; //import section
 import javax.swing.JOptionPane;
 
 public class controller
@@ -8,14 +8,14 @@ public class controller
 	/**
 	 * Builds the instance of the controller
 	 */
-	private model myFlamingo;
-	private model userFlamingo;
+	private Flamingo myFlamingo;
+	private Flamingo userFlamingo;
 	//private Scanner inputScanner;
 	 
 	public controller()
 	{
-		myFlamingo = new model();
-		userFlamingo = new model();
+		myFlamingo = new Flamingo();
+		userFlamingo = new Flamingo();
 		//inputScanner = new Scanner(System.in);
 	}
 	/**
@@ -30,7 +30,8 @@ public class controller
 	{
 		//define a variable before the loop
 		boolean isFinished = false;
-		int someCount = 0;
+		int someCount = 9;
+		
 		//test code
 		while (!isFinished)
 		{
@@ -52,6 +53,14 @@ public class controller
 		{
 			response = JOptionPane.showInputDialog(null, "");
 		}
+		
+		for (int index = 0; index < 10; index++)
+		{
+			JOptionPane.showMessageDialog(null, "This is execution number" + index);
+			
+		}
+		
+			
 		myFlamingo.howTall(Double.parseDouble(response));
 	}
 	public boolean validInt(String maybeInt)
@@ -65,7 +74,7 @@ public class controller
 		}
 		catch (NumberFormatException error)
 		{
-			JOptionPane.showMessageDialog(null, "You need to typ in a whole number! ");
+			JOptionPane.showMessageDialog(null, " ");
 		}
 		
 		return isValid;
@@ -81,7 +90,7 @@ public class controller
 		}
 		catch (NumberFormatException error)
 		{
-			JOptionPane.showMessageDialog(null,  "Type in ta decimal value AKA a number with a . int the middle.");
+			JOptionPane.showMessageDialog(null,  " ");
 		}
 		
 		return isValid;
