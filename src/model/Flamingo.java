@@ -4,7 +4,7 @@ public class Flamingo
 {
 	//Declaration Section---
 	private String name;
-	private int legCount;
+	private double legCount;
 	private int armCount;
 	private double howTall;
 	//-----------------------
@@ -26,19 +26,19 @@ public class Flamingo
 	{
 		this.name = name;
 	}
-	public Flamingo(String name, int timeMinutes, int timeHours, double distance)
+	public Flamingo(String name, double legCount, int armCount, double howTall)
 	{
 		this.name = name;
-		this.legCount = timeMinutes;
-		this.armCount = timeHours;
-		this.howTall = distance;
+		this.legCount = legCount;
+		this.armCount = armCount;
+		this.howTall = howTall;
 		
 	}
 	public String getName()
 	{
 		return name;
 	}
-	public int getLegCount()
+	public double getLegCount()
 	{
 		return legCount;
 	}
@@ -54,7 +54,7 @@ public class Flamingo
 	{
 		this.name = name;
 	}
-	public void setLegCount(int legCount)
+	public void setLegCount(double legCount)
 	{
 		this.legCount = legCount;
 	}
