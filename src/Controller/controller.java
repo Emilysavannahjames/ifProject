@@ -23,16 +23,22 @@ public class controller
 		//inputScanner = new Scanner(System.in);
 	}
 	/**
-	 * This is where the program starts calling methods to run the program
+	 * This is where the program starts calling methods to the program
 	 */
 	public void start()
 	{
 		
 	}
+	/**
+	 * This is where the program starts calling methods to run the program
+	 */
 	public void question()
 	{
 		
 	}
+	/**
+	 * This is where the program starts calling questions
+	 */
 	private void askUser()
 	{
 		Flamingo userFlamingo = new Flamingo();
@@ -96,7 +102,9 @@ public class controller
 		myFlamingo.howTall(Double.parseDouble(response2));
 		
 	}
-	
+	/**
+	 * This is where the program starts flamingoBuild
+	 */
 	public void flamingoBuild()
 	{
 		//local variable are only visible in the method they are defined in
@@ -121,7 +129,7 @@ public class controller
 			
 			//good for remove, replace, change multiple values 
 			Flamingo currentFlamingo = myFlamingo.get(index);
-			currentFlamingo.setName("The Flamingos name is " + index + " Flamingo");
+			currentFlamingo.setName("The Flamingos name is " + index + ". ");
 			
 		}
 		//standard backward loop
